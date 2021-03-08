@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/ex1229.css">
+  <script src="js/jquery-3.5.1.min.js"></script>  	
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="cart.js"></script>
+<style>
+  input[type="text"] {
+    width: 50px;
+    text-align: center;
+  }
+  .p-num {
+    min-width: 160px;
+  }
+</style>
+</head>
+
+<body>
+
+<header class="bg-dark">
+<div class="container">
+ 
+ <nav class="navbar navbar-expand-lg navbar-dark mynav">
+  <!-- Brand -->
+  <a class="navbar-brand" href="ex1229.html">
+    <img src="images/logo.png" width="70%">
+  </a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="ex1229.html">首頁</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">關於公司</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="shop.html">商品商城</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="job.html">人力資源</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">連絡我們</a>
+      </li>
+    </ul>
+    <div class="ml-auto">
+      <a href="#" class="btn btn-outline-success text-white">登入</a>
+      <a href="cart.html" class="btn btn-outline-success text-white">購物車
+        <span class="badge badge-light" id="mycnt">0</span></a>
+      <a href="#" class="btn btn-outline-success text-white">結帳</a>
+    </div>
+  </div>
+</nav>
+</div>
+</header>
+
+<section>
+<div class="container">
+  <h2>購物車</h2>
+   <div class="table-responsive">
+    <table class="table table-bordered">
+      <thead class="text-dark">
+        <tr>
+          <th><input type="checkbox" class="checkall">全選</th>
+          <th>商品</th>
+          <th>單價</th>
+          <th>數量</th>
+          <th>小計</th>
+          <th>操作</th>          
+        </tr>
+      </thead>
+      <tbody id="tbody">
+        <!--
+        <tr class="cart-item">
+          <td><input type="checkbox" class="j-check"></td>
+          <td>DOG01</td>
+          <td class="p-price">600</td>
+          <td class="p-num"><button class="btn btn-outline-success dec">-</button>
+            <input type="text" value="1" class="itxt">
+            <button class="btn btn-outline-success inc">+</button>
+          </td>
+          <td class="p-sum">600</td>
+          <td><button class="btn btn-primary p-action">刪除</button></td>          
+        </tr>
+
+        <tr class="cart-item">
+          <td><input type="checkbox" class="j-check"></td>
+          <td>DOG02</td>
+          <td class="p-price">600</td>
+          <td class="p-num"><button class="btn btn-outline-success dec">-</button>
+            <input type="text" value="1" class="itxt">
+            <button class="btn btn-outline-success inc">+</button>
+          </td>
+          <td class="p-sum">600</td>
+          <td><button class="btn btn-primary p-action">刪除</button></td>          
+        </tr>
+      -->
+        
+      </tbody>
+    </table>   
+  </div>
+</div>
+</section>
+
+<section>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">已經選了 <em class="amt">0</em> 件商品</div>
+    <div class="col-md-6">總價: <em class="amt2">0</em> 元</div>
+  </div>
+</div>
+</section>
+
+
+<footer class="mt-5 bg-dark pt-3 pb-3">
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 mt-3 mb-3">
+      <ul class="footer-menu">
+      <li class="">
+        <a class="" href="#">首頁</a>
+      </li>
+      <li class="">
+        <a class="" href="#">關於公司</a>
+      </li>
+      <li class="">
+        <a class="" href="shop.html">商品商城</a>
+      </li>
+      <li class="">
+        <a class="" href="#">人力資源</a>
+      </li>
+      <li class="">
+        <a class="" href="#">連絡我們</a>
+      </li>
+    </ul>
+    </div>
+    <div class="col-md-6">
+       <form action="">
+          <div class="form-group">
+            <label for="email"><h5 class="text-white">留下Email, 我會給您最新的資訊:</h5></label>
+            <input type="email" class="form-control" placeholder="Enter email" id="email">
+          </div>         
+          <button type="submit" class="btn btn-primary btn-block">傳送</button>
+      </form> 
+    </div>
+  </div>
+
+  <div class="row mt-3">
+    <div class="col-md-12 bg-dark">
+      <p class="text-white text-center">&copy Copyright 2020 XXX</p>
+    </div>
+  </div>
+</div>
+</footer>
+</body>
+</html>
